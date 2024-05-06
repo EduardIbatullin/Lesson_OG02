@@ -1,21 +1,6 @@
-def add(x, y):
-    return x + y
+# main.py
 
-
-def subtract(x, y):
-    return x - y
-
-
-def multiply(x, y):
-    return x * y
-
-
-def divide(x, y):
-    if y == 0:
-        return "Ошибка: деление на ноль!"
-    else:
-        return x / y
-
+import math_calc
 
 print("Выберите операцию:")
 print("1. Сложение")
@@ -29,12 +14,12 @@ num1 = float(input("Введите первое число: "))
 num2 = float(input("Введите второе число: "))
 
 if choice == '1':
-    print("Результат:", add(num1, num2))
+    print("Результат:", math_calc.add(num1, num2))
 elif choice == '2':
-    print("Результат:", subtract(num1, num2))
+    print("Результат:", math_calc.subtract(num1, num2))
 elif choice == '3':
-    print("Результат:", multiply(num1, num2))
+    print("Результат:", math_calc.multiply(num1, num2))
 elif choice == '4':
-    print("Результат:", divide(num1, num2))
+    print("Результат:", math_calc.divide(num1, num2))
 else:
     print("Неверный ввод")
